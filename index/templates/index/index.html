@@ -1,0 +1,610 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>重庆江之南整形医院</title>
+    <meta charset="utf-8">
+
+    <link href="http://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.bootcss.com/animate.css/3.5.2/animate.min.css" rel="stylesheet">
+
+    <script src="http://cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script>
+
+    <script src="http://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+    <style>
+        body { padding-top: 70px; }
+        .navbar-default {
+            background-color: #363636;
+            border-color: #646464;
+            text-align:center
+
+        }
+
+        .navbar-default .navbar-brand {
+            color: #ecf0f1;
+            padding: 0;
+            height: 60px;
+            margin-top:10px;
+
+        }
+
+        .navbar-default .navbar-brand:hover,
+        .navbar-default .navbar-brand:focus {
+            color: #ffffff;
+        }
+        .navbar-default .navbar-text {
+            color: #ecf0f1;
+        }
+        .navbar-default .navbar-nav > li > a {
+            color: #ecf0f1;
+            height: 70px;
+        }
+        .navbar-default .navbar-nav > li > a:hover,
+        .navbar-default .navbar-nav > li > a:focus
+        {
+            color: #ffffff;
+            background-color:#646464;
+        }
+        .navbar-default .navbar-nav > .active > a,
+        .navbar-default .navbar-nav > .active > a:hover,
+        .navbar-default .navbar-nav > .active > a:focus {
+            color: #ffffff;
+            background-color: #646464;
+        }
+        .navbar-default .navbar-nav > .open > a,
+        .navbar-default .navbar-nav > .open > a:hover,
+        .navbar-default .navbar-nav > .open > a:focus {
+            color: #ffffff;
+            background-color: #646464;
+        }
+        .navbar-default .navbar-toggle {
+            border-color: #646464;
+        }
+        .navbar-default .navbar-toggle:hover,
+        .navbar-default .navbar-toggle:focus {
+            background-color: #646464;
+        }
+        .navbar-default .navbar-toggle .icon-bar {
+            background-color: #ecf0f1;
+        }
+        .navbar-default .navbar-collapse,
+        .navbar-default .navbar-form {
+            border-color: #ecf0f1;
+        }
+        .navbar-default .navbar-link {
+            color: #ecf0f1;
+        }
+        .navbar-default .navbar-link:hover {
+            color: #ffffff;
+        }
+
+        @media (max-width: 767px) {
+            .navbar-default .navbar-nav .open .dropdown-menu > li > a {
+                color: #ecf0f1;
+
+                margin: 0;
+            }
+            .navbar-default .navbar-nav .open .dropdown-menu > li > a:hover,
+            .navbar-default .navbar-nav .open .dropdown-menu > li > a:focus {
+                color: #ffffff;
+                padding: 0;
+                margin: 0;
+            }
+            .navbar-default .navbar-nav .open .dropdown-menu > .active > a,
+            .navbar-default .navbar-nav .open .dropdown-menu > .active > a:hover,
+            .navbar-default .navbar-nav .open .dropdown-menu > .active > a:focus {
+                color: #ffffff;
+
+                margin: 0;
+                background-color: #646464;
+            }
+        }
+
+        .div_bar1 {
+            padding: 0;
+            margin: 0;
+            height: 0px;
+
+        }
+        .nav_f1 {
+            font-size:15px;
+            font-family: "Microsoft Himalaya";
+            font-weight:bold;
+        }
+        .nav_f2 {
+            font-size:10px;
+            font-family:"Arial"
+        }
+
+        .circle {
+            height: 520px;
+            width: 280px;
+            border: 1px  solid #d2a667;
+            border-radius: 60% / 180px;
+        }
+        .meirong {
+            color:  #666666;
+            text-align:center
+        }
+        .btn-w3r {
+            width: 50px;
+            height: 50px;
+            -moz-border-radius: 50%;
+            -webkit-border-radius: 50%;
+            border-radius: 50%;
+            background-color: #ffffff;
+            border-color:#d2a667;
+        }
+        .btn-w3r:hover {
+            background: #333; /* 旧版浏览器 */
+            color:#d2a667;
+        }
+        .pro_avg {
+            height: 250px;
+        }
+
+        .specialist {
+            background: #7d7d7d;
+            font-family: "Microsoft Himalaya";
+
+        }
+        .specialist_img {
+            padding-left: 50px;
+            float: left;
+            padding-right: 8%;
+        }
+        .specialist_text {
+            margin-top: 30px;;
+        }
+
+        .spe_name {
+            color:#ffffff;
+            font-size:28px;
+
+
+         }
+        .spe_title {
+            color: #0f3286;
+            font-size:18px;
+            padding-left: 10px;
+            font-weight:bold;
+        }
+        .spe_context {
+            color: #ffffff;
+            font-size:18px;
+            margin-top: 15px;
+        }
+        .spe_context2 {
+            color: #ffffff;
+            font-size:13px;
+            font-family: "monospace";
+        }
+        .hr-line-dashed {
+            border: 1px  dashed ;
+            color: #0f3286;
+        }
+        .good_oper {
+            margin-top: 10px;
+            margin-bottom: 25px;
+        }
+        .girls {
+            width: 1204px;
+            background: #e0e8eb;
+        }
+        .girl {
+            padding: 0;
+            font-size:23px;
+            font-family: "monospace";
+            color: #7f8486;
+            text-align:center;
+        }
+        .girl_title {
+            margin-top: 50px;
+        }
+        .girl_title2 {
+            margin-top: 20px;
+            font-size:25px;
+        }
+        .girl_hr {
+            border-color: #7f8486;
+            height: 1.5px;
+            background:#7f8486 ;
+            width: 65%;
+        }
+        .jzn {
+            margin-top: 130px;
+            font-size:35px;
+            color: #d4dde0;
+        }
+        .env {
+            background:#7f7d7d;
+        }
+        .env_text {
+            font-size:16px;
+            color: #ffffff;
+
+        }
+        .env_img {
+           float: left;
+            margin-right: 30px;
+        }
+        .env_right_text {
+            margin-top: 40px;
+            margin-bottom: 50px;
+            margin-left: -30px;
+        }
+        .service {
+            float: left;
+        }
+        .service_img {
+            margin-bottom: 20px;
+        }
+        .env_text2 {
+            width: 600px;
+            font-size:16px;
+            color: #ffffff;
+
+        }
+        .env_img_right {
+            float: right;
+        }
+        .env2 {
+            height: 210px;
+        }
+        .center_l {
+            float: left;
+
+        }
+        .leftc {
+            margin-left: 20px;
+            float: left;
+            position:relative;
+            top:50%;
+            transform:translateY(-50%);
+
+        }
+        .flipx {
+            -moz-transform:scaleX(-1);
+            -webkit-transform:scaleX(-1);
+            -o-transform:scaleX(-1);
+            transform:scaleX(-1);
+            float: left;
+            margin-right: 20px;
+            position:relative;
+            top:50%;
+            transform:translateY(-50%);
+        }
+
+        .circle2 {
+            height: 200px;
+            width: 300px;
+            border: 1px  solid #0f3286;
+            border-radius: 10% / 38px;
+            background: #7f7d7d;
+            margin: 0 auto
+        }
+        .circle2_img {
+            border-radius: 10% / 38px;
+            position:relative;
+            top:50%;
+            transform:translateY(-50%);
+        }
+        .bottom-bgc {
+            background: #242424;
+            height: 100px;
+        }
+        .bottom-center {
+            background: #242424;
+            color: #ffffff;
+
+        }
+        .bottom-bgc2 {
+            background: #242424;
+
+        }
+        .btm-context {
+            float: left;
+            margin-right: 30px;
+
+        }
+        .mr-dt {
+            font-size:16px;
+            border-bottom:2px solid #4e4e4e;
+            padding-bottom: 5px;
+        }
+
+        .mr-list {
+            margin-left: 50px;
+            margin-right: 20px;
+        }
+        .mr-dd {
+            text-align: center;
+            margin: 5px;
+            color: #e2e2e2;
+        }
+        .float-left {
+            float: left;
+                    }
+
+        .wx {
+            margin-left: 10px;
+            margin-right: 15px;
+        }
+        .weixin-text {
+            font-size: 16px;
+            color: #0090d8;
+        }
+        .fonts-16 {
+            font-size:16px;
+            width: 280px;
+        }
+        .wxc {
+            float: none;
+        }
+        .add {
+            font-size: 16px;
+        }
+        .qq {
+            font-size: 26px;
+        }
+
+        .bottom-copyright {
+            background: #1d1d1d;
+            height: 30px;
+            color: #767676;
+            text-align: center;
+            padding-top: 4px;
+        }
+        </style>
+</head>
+<body>
+
+<nav class="navbar navbar-default navbar-fixed-top center-block" role="navigation">
+    <div class="container">
+    <div class="container-fluid center-block">
+        <div class="navbar-header">
+             <a class="navbar-brand" href="#">
+                <img alt="logo" src="static/img/logo.png" height="55" width="200"/>
+            </a>
+
+
+            <ul class="nav navbar-nav nav-pills">
+                <li class="active">
+                    <a role="presentation" href="#" > <div class="div_bar1 nav_f1">江之南首页 </div> <br>
+                    <div id = "test1" class="div_bar1 nav_f2" >JIANGZHINAN HOME</div> </a></li>
+                <li ><a role="presentation" href="#"> <div class="div_bar1 nav_f1">项目系列 </div><br>
+                    <div class="div_bar1 nav_f2"> CASE SERIES </div>
+                </a></li>
+                <li><a role="presentation" href="#"> <div class="div_bar1 nav_f1">医院团队 </div><br>
+                    <div class="div_bar1 nav_f2"> MEDICAL TEAM </div>
+                </a></li>
+                <li><a role="presentation" href="#"> <div class="div_bar1 nav_f1">品牌中心 </div><br>
+                    <div class="div_bar1 nav_f2"> BRAND CENTER </div>
+                </a></li>
+                <li><a role="presentation" href="#"> <div class="div_bar1 nav_f1">新闻动态 </div><br>
+                    <div class="div_bar1 nav_f2"> EWS DYNAMIC </div>
+                </a></li>
+                <li><a role="presentation" href="#"> <div class="div_bar1 nav_f1">求美案例 </div><br>
+                    <div class="div_bar1 nav_f2"> BEAUTY CASE   </div>
+                </a></li>
+                <li><a role="presentation" href="#"> <div class="div_bar1 nav_f1">塑美设备 </div><br>
+                    <div class="div_bar1 nav_f2"> PLASTIC EQUIPMENT </div>
+                </a></li>
+
+            </ul>
+
+        </div>
+    </div>
+    </div>
+</nav>
+<div >
+    <img class="img-responsive "  src="static/img/banner.gif"/>
+</div>
+<div class="container">
+    <img class="center-block" src="static/img/index_project.gif" height="239" width="786"/>
+</div>
+
+<div class="container">
+    <div class="row">
+        <div class="col-xs-6 col-sm-4 ">
+            <div class="thumbnail circle container">
+                <img  class="img-circle img-thumbnail" src="static/img/idx_pro_l1.png" height="194" width="194"/>
+                <div class="caption pro_avg" >
+                    <h3 class="meirong">美容护肤中心</h3>
+                    <h6 class="meirong">COSMETIC DERMATOLOGY</h6>
+                    <p>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;权威专家，顶尖技术，最新设备。针对各类皮肤问题。激光美肤、护肤；全身护理。重逢青春，与完美零距离。
+                    </p>
+                </div>
+                <button type="button" class="btn btn-w3r center-block">更多</button>
+            </div>
+
+        </div>
+        <div class="col-xs-6 col-sm-4">
+            <div class="thumbnail circle container   data-wow-duration wow slideInUp animated">
+                <img  class="img-circle img-thumbnail" src="static/img/idx_pro_l2.png" height="194" width="194"/>
+                <div class="caption pro_avg">
+                    <h3 class="meirong">整形美容中心</h3>
+                    <h6 class="meirong">COSMETIC SURGERY</h6>
+                    <p>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;万余成功案例，专业打造媚眼无痕翘睫术、雅典娜美鼻、细胞活化填充术、纳米无痕祛眼袋、江之南韩国细胞活化塑胸、以色列飞顿皮肤年轻化新纪元、深V灵动美胸、“紧箍咒”私密回春紧致术、面部失败手术修复等美容外科项目。
+                    </p>
+                </div>
+                <button type="button" class="btn btn-w3r center-block">更多</button>
+            </div>
+        </div>
+        <div class="col-xs-6 col-sm-4">
+            <div class="thumbnail circle container">
+                <img  class="img-circle img-thumbnail" src="static/img/idx_pro_l3.png" height="194" width="194"/>
+                <div class="caption pro_avg">
+                    <h3 class="meirong">无创美容中心</h3>
+                    <h6 class="meirong">MICRO PLASTIC INJECTION</h6>
+                    <p>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;面部微整形整体设计、凹陷注射、面部提拉注射、皇室御用Babyface、水晶泡泡、小V脸注射、面部除皱、面部及身体多部位溶脂收紧注射……
+                    </p>
+
+                </div>
+                <button type="button" class="btn btn-w3r center-block">更多</button>
+            </div>
+        </div>
+
+    </div>
+
+</div>
+
+<div class="specialist ">
+    <img  class="center-block" src="static/img/idx_specialist_log.gif" height="236" width="461"/>
+    <div class="container ">
+        <div class="specialist_img">
+           <img src="static/img/specialist_dxl.gif" height="608" width="290"/>
+        </div>
+        <div class="specialist_text">
+            <span class="spe_name">董祥宁 </span> <span class="spe_title"> 江之南美容院长  &nbsp;| &nbsp; 主任医师</span>
+            <p class="spe_context">美容是锦上添花的事，要保证每个环节没有疏忽，确保治疗安全和成功。</p>
+            <p class="spe_context2">整形美容外科主任|中国医师协会美容整形会员|西南地区最权威的外科整形专家|江之南翘睫术、美莎瞳创始人之一</p>
+            <hr class="hr-line-dashed"/>
+            <img class="good_oper" src="static/img/goodOperating.gif" height="39" width="245"/>
+            <p class="spe_context2">媚眼翘睫术研发人、细胞激活因子皮肤再生术、自体脂肪填充、多维美雕隆鼻、综合隆鼻、B2B不磨骨V脸、雅典娜美鼻术、胸部整形、吸脂瘦身。同时在形体塑造与性感设计领研究出多种先进术式与维养体系，重庆首屈一指的形体雕塑专家。</p>
+        </div>
+    </div>
+</div>
+<img src="static/img/idx_star.gif"  class="center-block" height="216" width="425"/></body>
+<div class="container " >
+    <div class="row girls">
+        <div class="clo-xs-6 col-sm-3 girl "><img src="static/img/girl1.gif" height="340" width="301"/></div>
+        <div class="clo-xs-6 col-sm-3 girl ">
+           <p class="girl_title">Perfect Spallation</p>
+            <hr class="girl_hr"/>
+            <p class="girl_title2">性感女神的诞生</p>
+            <p class="jzn">JIANGZHINAN</p>
+        </div>
+        <div class="clo-xs-6 col-sm-3 girl"><img src="static/img/girl2.gif" height="340" width="301"/></div>
+        <div class="clo-xs-6 col-sm-3 girl ">
+            <p class="girl_title">Perfect Spallation</p>
+            <hr class="girl_hr"/>
+            <p class="girl_title2">成熟女性的养成</p>
+            <p class="jzn">JIANGZHINAN</p>
+        </div>
+        <div class="clo-xs-6 col-sm-3 girl ">
+            <p class="girl_title">Perfect Spallation</p>
+            <hr class="girl_hr"/>
+            <p class="girl_title2">脱变活力美女</p>
+            <p class="jzn">JIANGZHINAN</p>
+        </div>
+        <div class="clo-xs-6 col-sm-3 girl"><img src="static/img/girl3.gif" height="340" width="301"/></div>
+        <div class="clo-xs-6 col-sm-3 girl ">
+            <p class="girl_title">Perfect Spallation</p>
+            <hr class="girl_hr"/>
+            <p class="girl_title2">青春与性感的结合</p>
+            <p class="jzn">JIANGZHINAN</p>
+        </div>
+        <div class="clo-xs-6 col-sm-3 girl"><img src="static/img/girl4.gif" height="340" width="301"/></div>
+
+    </div>
+
+</div>
+<div class="env">
+    <img  class="center-block" src="static/img/env.gif" height="231" width="547"/>
+    <div class="container" >
+        <div>
+            <img  class="env_img" src="static/img/env2.gif" height="451" width="745"/>
+            <div class="env_right">
+                 <img class="env_right_text" src="static/img/env3.gif" height="87" width="346"/>
+                 <p class="env_text">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;江之南医学整形美容，西南唯一一家中韩台合资的医疗美容、是世界整形业大腕--香港江南医疗集团在中国地区唯一投资的私属美丽定制机构。其中在重庆有江北瑞俪医院、璧山西城医院，江之南整形美容品牌连锁机构，实现医养联合的健康与美丽管理机构。</p>
+            </div>
+        </div>
+
+</div>
+    <div class="container">
+        <div class="service">
+            <img  class="service_img" src="static/img/service.gif" height="100" width="213"/>
+            <p class="env_text2">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;20多年来，江之南秉承“精益求精 和谐至美”的理念，私属定制，“帮助您实现您一直梦想的样子”，让广大爱美人士在生命的每一个阶段都能活出最美的自己！</p>
+            <p class="env_text2"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;江之南与美国曼托、射极峰、法国ES、德国宝俪、韩国韩士公司等多家全球顶级材料服务商建立长期合作关系，确保每一种材料（细到缝合线及止血棉）的超高品质，并耗资数百万引进世界公认的先进设备，让您的蜕变历程更加安全、舒心。 同时，我们广泛进行中台韩技艺交流，塑造了一支技术精湛而充满职业素养的医护团队。</p>
+        </div>
+        <div class="env_img_right">
+            <img src="static/img/env4.gif" height="308" width="474"/>
+        </div>
+    </div>
+</div>
+<div class="env env2">
+    <img class="leftc" src="static/img/left_ant.gif"/>
+    <div class="container center_l">
+        <div class="row">
+            <div class="col-xs-6 col-sm-4 ">
+                <div class="thumbnail circle2 container">
+                    <img class="circle2_img" src="static/img/romm1.gif" /></div>
+            </div>
+            <div class="col-xs-6 col-sm-4 ">
+                <div class="thumbnail circle2 container">
+                    <img class="circle2_img" src="static/img/room2.png" /></div>
+            </div>
+            <div class="col-xs-6 col-sm-4">
+                <div class="thumbnail circle2 container">
+                    <img class="circle2_img" src="static/img/room3.png" /></div>
+            </div>
+
+        </div>
+    </div>
+    <img class="flipx" src="static/img/right_ant.gif"/>
+</div>
+<div class="container">
+    <img class="center-block" src="static/img/video.png" height="242" width="418"/>
+    <video class="center-block" src="static/video/cqjzn.mp4"  width="712" height="450" controls="controls">
+        您的浏览器不支持 video 标签。
+    </video>
+</div>
+<div class="bottom-bgc"></div>
+
+<div class="bottom-bgc2">
+<div class="bottom-center container  ">
+    <div class="btm-context">
+        <img src="static/img/bottom_logo.gif" height="246" width="226"/>
+    </div>
+    <div class="btm-context">
+        <dl class="mr-list float-left">
+            <dt class="mr-dt">美容护肤中心</dt>
+            <dd class="mr-dd">美肤祛班</dd>
+            <dd class="mr-dd">美白嫩肤</dd>
+            <dd class="mr-dd">完美肌肤</dd>
+            <dd class="mr-dd">紧肤除皱</dd>
+            <dd class="mr-dd">冰点脱毛</dd>
+            <dd class="mr-dd">超声刀</dd>
+        </dl>
+        <dl class="mr-list float-left">
+            <dt class="mr-dt">整形美容中心</dt>
+            <dd class="mr-dd">眼部整形</dd>
+            <dd class="mr-dd">鼻部整形</dd>
+            <dd class="mr-dd">胸部整形</dd>
+            <dd class="mr-dd">面部精雕</dd>
+            <dd class="mr-dd">私密整形</dd>
+            <dd class="mr-dd">自体脂肪填充</dd>
+            <dd class="mr-dd">吸脂减肥</dd>
+        </dl>
+        <dl class="mr-list float-left">
+            <dt class="mr-dt">无创美容中心</dt>
+            <dd class="mr-dd">玻尿酸</dd>
+            <dd class="mr-dd">埋线提升</dd>
+            <dd class="mr-dd">肉毒素</dd>
+
+        </dl>
+    </div>
+    <div  class="btm-context">
+        <div>
+            <img class="float-left wx" src="static/img/weixin.jpg" height="120" width="120"/>
+            <p class="weixin-text  ">江之南官方微信</p>
+            <p class="fonts-16">公众号：jznzxjg</p>
+            <p class="fonts-16">重庆江之南医疗美容</p>
+            <p> &nbsp;</p>
+        </div>
+        <div class="wxc">
+            <p class="add">ADD:重庆市渝中区解放碑时代豪苑</p>
+            <p class="qq">QQ：2986 8390 92</p>
+    </div>
+    </div>
+</div>
+</div>
+<div class="bottom-copyright">
+    <p>COPYRIGHT  @   2017-2027 JIANGZHINANZHENGXING 重庆江之南医疗美容有限公司</p>
+</div>
+</html>
